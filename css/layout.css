@@ -1,0 +1,28 @@
+.container {
+    padding: 0 122px;
+    margin: 0 auto;
+    max-width: 1124px;
+    box-sizing: border-box;
+}
+
+.container_header{
+    padding: 0 5.5625rem;
+}
+
+.link-white {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.2s;
+    border-bottom: 0.0625rem solid transparent;
+}
+
+.link-white:hover {
+    color: #a3cc40;
+    border-color: #a3cc40;
+}
+
+.link-white_big {
+    text-transform: uppercase;
+    text-decoration: none;
+}
