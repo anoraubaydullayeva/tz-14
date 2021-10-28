@@ -1,0 +1,15 @@
+/* @media screen and (max-width: 768px) {
+    .container{
+        padding: 0 10px;
+
+    }
+    .blok__tel{
+        color: red;
+    }
+} */
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 20px;
+    }
+}
