@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-.container_header{
-    padding: 0 5.5625rem;
-}
-
 .link-white {
     display: inline-block;
     color: #fff;

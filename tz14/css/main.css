@@ -59,7 +59,7 @@ body {
 /* Global end*/
 /*Header*/
 .blok {
-    background-image: url(../image/Backgroound_Picture.png);
+    background-image: url(../image/Backgroound__Picture.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -69,6 +69,10 @@ body {
 
 .header {
     width: 100%;
+}
+
+.container_header {
+    padding: 0 3rem;
 }
 
 .navigation {
@@ -85,13 +89,19 @@ body {
     font-weight: 500;
 }
 
-.blok__coll {
+.innopolis__logo {
     margin-top: 3.3rem;
 }
 
-.blok__coll path {
+.innopolis__logo path {
     max-width: 73.1875rem;
     max-height: 45.5rem;
+}
+
+.innopolis__logo {
+    position: relative;
+    Width: 10.0625rem;
+    Height: 2.5625rem;
 }
 
 .menu__list {
@@ -300,6 +310,10 @@ body {
     height: 11rem;
 }
 
+.img:hover {
+    transform: scale(1.07);
+}
+
 .menu_bar {
     text-align: center;
     font-size: 0.8rem;
@@ -431,16 +445,19 @@ table td {
 .present {
     background: url(../image/7.png) no-repeat center/cover;
     max-width: 100%;
-    height: 41rem;
-    padding: 0 13rem;
+    padding: 10rem 0 12rem 0;
     overflow: visible;
+    position: relative;
+}
+
+.present>.container {
     position: relative;
 }
 
 .present::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -0.1rem;
     right: 0;
     border-bottom: 9.0625rem solid #fff;
     border-left: 100vw solid transparent;
@@ -449,7 +466,7 @@ table td {
 .present::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -0.1rem;
     right: 0;
     border-top: 9.0625rem solid #fff;
     border-right: 100vw solid transparent;
@@ -458,9 +475,9 @@ table td {
 .present__imbem {
     height: 17.30rem;
     width: 17.29rem;
-    position: relative;
+    position: absolute;
     border-radius: 100%;
-    margin-left: 2.3125rem;
+    top: -8rem;
 }
 
 .present__text {
@@ -478,7 +495,6 @@ table td {
     color: white;
     text-align: end;
     font-size: 0.80rem;
-    margin-top: -6.0625rem;
 }
 
 .present__heading {
@@ -753,14 +769,13 @@ table td {
 }
 
 .photo {
-    display: inline-block;
     background-color: yellowgreen;
     color: yellowgreen;
     width: 13.125rem;
     min-height: 17.75rem;
     color: white;
     border-radius: 0.5625rem;
-    margin-top: 4.6875rem;
+    margin: 0 auto
 }
 
 .photo img {
@@ -811,6 +826,10 @@ table td {
     margin: 0.5rem 0.5625rem 0.0625rem 1rem;
 }
 
+.owl-carousel{
+    margin-top: 2rem;
+}
+
 .owl-nav {
     font-size: 4.875rem;
     color: #97B13C;
@@ -820,42 +839,23 @@ table td {
 
 .owl-prev {
     position: absolute;
-    left: 16.0625rem;
+    left: 15.0625rem;
 }
 
 .owl-next {
     position: absolute;
-    left: 34.6875rem;
+    left: 33.6875rem;
 }
 
 .owl-item.active.center>.photo {
     transform: scale(1.12);
     border-radius: 0.625rem;
-    font-size:0.6875rem;
-    line-height: 0.875rem;
-}
-/* 
-.owl-item.active.center>.photo p {
     font-size: 0.6875rem;
     line-height: 0.875rem;
+    transition:0.3s;
 }
 
-.owl-item.active.center>.photo h4 {
-    margin-top: 1.0625rem;
-    margin-bottom: 1.125rem;
-    font-size: 1.125rem;
-    line-height: 1.4375rem;
-}
-
-
-.owl-item.active.center>.photo .section__photo_text {
-    font-size:0.5625rem;
-    line-height: 0.75rem;
-    margin-left: 11.75rem;
-    margin-top: 0.8125rem;
-} */
-
-.owl-carousel .owl-stage-outer{
+.owl-carousel .owl-stage-outer {
     padding: 1.875rem 0;
 }
 
@@ -863,14 +863,13 @@ table td {
 /* Обратная связь */
 .form__section {
     display: flex;
-    padding: 2.5rem;
-    margin: 0 0 0 30.0625rem;
+    margin-bottom: 3rem;
+    justify-content: center;
 }
 
 .img_back {
     background: url(../image/kino.png)no-repeat center/cover;
     width: 25.875rem;
-    height: 32.9375rem;
     border-radius: 1.25rem 0 0 1.25rem;
 }
 
@@ -903,11 +902,13 @@ form {
     width: 21.5rem;
 }
 
-.feedback__select-wraper svg {
+.feedback__select-wraper img {
     position: absolute;
     right: 0.75rem;
     top: 50%;
     transform: translateY(-50%);
+    Width:12px;
+    Height:6px;
 }
 
 .option_form {
@@ -1145,7 +1146,6 @@ form {
 .footer {
     background: #A3CC40;
     color: white;
-    height: 40.625rem;
 }
 
 .footer__link {
@@ -1166,7 +1166,7 @@ form {
 }
 
 .footer__content {
-    margin: 17.3rem 0 0 -10.30rem;
+    margin: 4.3rem 0 0 0;
 }
 
 .text2 {
@@ -1186,7 +1186,7 @@ img {
 }
 
 #site {
-    margin: 16.7rem 5.25rem 0 0;
+    margin: 4.3rem 5.25rem 0 0;
 }
 
 .site {
@@ -1212,7 +1212,7 @@ img {
 
 #contact {
     list-style: none;
-    margin: 16.7rem 9.30rem 1.375rem 0;
+    margin: 4.3rem 9.30rem 1.375rem 0;
 }
 
 .contact {
@@ -1305,7 +1305,7 @@ ul {
     font-weight: 400;
     font-size: 0.9375rem;
     line-height: 1.1875rem;
-    margin: 7.0625rem 0 0 4.625rem;
+    margin: 2rem 0 0 4.625rem;
 }
 
 /* footer end */

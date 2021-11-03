@@ -13,3 +13,27 @@
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .owl-prev {
+        position: absolute;
+        left: 15rem;
+    }
+
+    .owl-next {
+        position: absolute;
+        left: 34rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .owl-prev {
+        position: absolute;
+        left: 15rem;
+    }
+
+    .owl-next {
+        position: absolute;
+        left: 34rem;
+    }
+}
